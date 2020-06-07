@@ -82,7 +82,7 @@ set CMD_LINE_ARGS=%*
 :execute
 @rem Setup the command line
 
-set CLASSPATH=%APP_HOME%\lib\introducao_gradle.jar
+set CLASSPATH=%APP_HOME%\lib\introducao_gradle.jar;%APP_HOME%\lib\commons-math3-3.6.1.jar
 
 @rem Execute introducao_gradle
 "%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %INTRODUCAO_GRADLE_OPTS%  -classpath "%CLASSPATH%" model.App %CMD_LINE_ARGS%

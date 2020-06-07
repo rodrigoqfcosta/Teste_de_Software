@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="model.LibTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-05-27T13:17:47" hostname="rodrigo-ubuntu" time="0.017">
+<testsuite name="model.LibTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-06-07T15:52:12" hostname="DESKTOP-KCQUQ2C" time="0.026">
   <properties/>
-  <testcase name="somaTest()" classname="model.LibTest" time="0.017"/>
+  <testcase name="factorialTest1()" classname="model.LibTest" time="0.026"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
