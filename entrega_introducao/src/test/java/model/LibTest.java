@@ -13,8 +13,11 @@ public class LibTest{
 		long factorialTest1 = CombinatoricsUtils.factorial(10);
 		assertEquals(3628800, factorialTest1);
 	}
-
+	
+		@Test
+	public void factorialTest2(){
+		long factorialTest2 = CombinatoricsUtils.factorial(5);
+		assertEquals(120, factorialTest2);
+	}
+	
 }
-
-
-
