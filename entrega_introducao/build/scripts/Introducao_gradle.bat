@@ -17,7 +17,7 @@
 @if "%DEBUG%" == "" @echo off
 @rem ##########################################################################
 @rem
-@rem  Introducao_gradle startup script for Windows
+@rem  introducao_gradle startup script for Windows
 @rem
 @rem ##########################################################################
 
@@ -82,10 +82,10 @@ set CMD_LINE_ARGS=%*
 :execute
 @rem Setup the command line
 
-set CLASSPATH=%APP_HOME%\lib\Introducao_gradle.jar
+set CLASSPATH=%APP_HOME%\lib\introducao_gradle.jar;%APP_HOME%\lib\commons-math3-3.6.1.jar
 
-@rem Execute Introducao_gradle
-"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %INTRODUCAO_GRADLE_OPTS%  -classpath "%CLASSPATH%" java.App %CMD_LINE_ARGS%
+@rem Execute introducao_gradle
+"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %INTRODUCAO_GRADLE_OPTS%  -classpath "%CLASSPATH%" model.App %CMD_LINE_ARGS%
 
 :end
 @rem End local scope for the variables with windows NT shell
