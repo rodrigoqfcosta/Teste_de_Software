@@ -14,7 +14,7 @@ public class LibTest{
 		assertEquals(3628800, factorialTest1);
 	}
 	
-		@Test
+	@Test
 	public void factorialTest2(){
 		long factorialTest2 = CombinatoricsUtils.factorial(5);
 		assertEquals(120, factorialTest2);
