@@ -9,16 +9,14 @@ repositories {
 }
 
 dependencies {
+	testCompile 'org.junit.jupiter:junit-jupiter-params:5.3.1'
 	testCompileOnly 'org.junit.jupiter:junit-jupiter-api:5.3.1'
 	testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.3.1'
 	compile 'org.apache.httpcomponents:httpclient:4.5.12'
-
-	// https://mvnrepository.com/artifact/org.json/json
 	compile 'org.json:json:20200518'
 }
 
 application {
-    // Define the main class for the application.
     mainClassName = 'model.App'
 }
 
