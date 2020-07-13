@@ -23,7 +23,6 @@ public class App {
 
 		Scanner sc = new Scanner(System.in);
 
-		Scanner sc = new Scanner(System.in);
         System.out.print("Valor nominal = $");
 		double valorNominal = sc.nextDouble();
         System.out.print("Para o dia: ");
