@@ -23,22 +23,26 @@ public class App {
 
 		Scanner sc = new Scanner(System.in);
 
-		JSONObject my_json = new JSONObject();
-		System.out.println("Valor nominal = $");
-		my_json.put("valor_nominal", sc.nextDouble());
-		System.out.println("Para o dia: ");
-		my_json.put("dia", sc.nextInt());
-		String str_json = my_json.toString();
-		sc.close();
+		Scanner sc = new Scanner(System.in);
+        System.out.print("Valor nominal = $");
+		double valorNominal = sc.nextDouble();
+        System.out.print("Para o dia: ");
+		int dia = sc.nextInt();
+        sc.close();
 
-		System.out.println("Valor calculado: $" + String.format("%.2f",  HTTP(str_json)));
+		System.out.println("Valor calculado: $" + String.format("%.2f",  HTTP(valorNominal, dia)));
 
     }
 
-    public static double HTTP(String str_json) throws URISyntaxException {
+    public static double HTTP(double x,int y) throws URISyntaxException {
 
-        Double valor = null;
-            URIBuilder uriBuilder = new URIBuilder("https://aluguebug.herokuapp.com/calc");
+			JSONObject my_json = new JSONObject();
+			my_json.put("valor_nominal", x);
+			my_json.put("dia", y);
+			String str_json = my_json.toString();
+			
+			Double valor = null;
+			URIBuilder uriBuilder = new URIBuilder("https://aluguebug.herokuapp.com/calc");
             uriBuilder.setParameter("dados", str_json);
 
             HttpClient client = HttpClientBuilder.create().build();
